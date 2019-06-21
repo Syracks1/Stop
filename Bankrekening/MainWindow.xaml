@@ -1,0 +1,33 @@
+﻿<Window x:Class="Bankrekening.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Bankrekening"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Label Content="Rekeningnummer:" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblNumLeft" Content="" HorizontalAlignment="Left" Margin="121,10,0,0" VerticalAlignment="Top"/>
+        <Label Content="Naam:" HorizontalAlignment="Left" Margin="10,36,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblNameLeft" Content="" HorizontalAlignment="Left" Margin="121,36,0,0" VerticalAlignment="Top"/>
+        <Label Content="Saldo:" HorizontalAlignment="Left" Margin="10,62,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblMonLeft" Content="0" HorizontalAlignment="Left" Margin="121,62,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="tbxLeft" HorizontalAlignment="Left" Height="23" Margin="10,93,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="45"/>
+        <!--<TextBox x:Name="tbxDecLeft" HorizontalAlignment="Left" Height="23" Margin="68,93,0,0" TextWrapping="Wrap" Text="00" VerticalAlignment="Top" Width="71"/>
+        <Label Content="," HorizontalAlignment="Left" Margin="55,93,0,0" VerticalAlignment="Top"/>-->
+        <Button x:Name="btnTakeLeft" Content="opnemen" HorizontalAlignment="Left" Margin="144,93,0,0" VerticalAlignment="Top" Width="75" Click="BtnTakeLeft_Click"/>
+        <Button x:Name="btnStortLeft" Content="Storten" HorizontalAlignment="Left" Margin="144,117,0,0" VerticalAlignment="Top" Width="75" Click="BtnStortLeft_Click"/>
+
+        <Label Content="Rekeningnummer:" HorizontalAlignment="Left" Margin="500,10,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblNumRight" Content="" HorizontalAlignment="Left" Margin="650,10,0,0" VerticalAlignment="Top"/>
+        <Label Content="Naam:" HorizontalAlignment="Left" Margin="500,36,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblNameRight" Content="" HorizontalAlignment="Left" Margin="650,36,0,0" VerticalAlignment="Top"/>
+        <Label Content="Saldo:" HorizontalAlignment="Left" Margin="500,62,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblMonRight" Content="0" HorizontalAlignment="Left" Margin="650,62,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="tbxRight" HorizontalAlignment="Left" Height="23" Margin="500,93,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="45"/>
+        <Button x:Name="btnTakeRight" Content="opnemen" HorizontalAlignment="Left" Margin="650,93,0,0" VerticalAlignment="Top" Width="75" Click="BtnTakeRight_Click"/>
+        <Button x:Name="btnStortRight" Content="Storten" HorizontalAlignment="Left" Margin="650,117,0,0" VerticalAlignment="Top" Width="75" Click="BtnStortRight_Click"/>
+
+    </Grid>
+</Window>
